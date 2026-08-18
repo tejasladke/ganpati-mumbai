@@ -179,7 +179,11 @@ function AppContent() {
         className="px-6 py-3 rounded-2xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-extrabold text-sm shadow-lg shadow-orange-500/20 transition-all inline-flex items-center gap-2"
       >
         <KeyRound className="w-4 h-4" />
+<<<<<<< HEAD
         <span>Enter Admin Password</span>
+=======
+        <span>Enter Admin Password (admin123)</span>
+>>>>>>> 0f699526977362ba5f7d5f20df712ebe5992d6b5
       </button>
     </div>
   );

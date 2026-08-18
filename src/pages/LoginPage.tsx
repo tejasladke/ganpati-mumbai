@@ -46,7 +46,18 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigateRegister, onSucc
           <span className="text-[10px] font-bold text-amber-800 uppercase tracking-wider block text-center">
             ⚡ Quick Demo Logins
           </span>
+<<<<<<< HEAD
           <div className="grid grid-cols-1 gap-2">
+=======
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              type="button"
+              onClick={() => handleDemoLogin('admin@mumbai.org', 'admin123')}
+              className="py-2 px-2 rounded-xl bg-stone-900 text-amber-300 text-xs font-bold hover:bg-stone-800 transition-colors"
+            >
+              Log in as Admin
+            </button>
+>>>>>>> 0f699526977362ba5f7d5f20df712ebe5992d6b5
             <button
               type="button"
               onClick={() => handleDemoLogin('devotee@mumbai.org', 'user123')}

@@ -37,7 +37,11 @@ export const AdminPasswordModal: React.FC<AdminPasswordModalProps> = ({
           onSuccess();
           onClose();
         } else {
+<<<<<<< HEAD
           setErrorMsg('Incorrect admin password or email.');
+=======
+          setErrorMsg('Incorrect admin password or email. (Default Admin Password: admin123)');
+>>>>>>> 0f699526977362ba5f7d5f20df712ebe5992d6b5
         }
       } else {
         // Verify admin password
@@ -48,11 +52,19 @@ export const AdminPasswordModal: React.FC<AdminPasswordModalProps> = ({
           onSuccess();
           onClose();
         } else {
+<<<<<<< HEAD
           setErrorMsg(res.message || 'Incorrect admin password.');
         }
       }
     } catch (err: any) {
       setErrorMsg(err.message || 'Failed to verify admin password.');
+=======
+          setErrorMsg(res.message || 'Incorrect admin password. Try: admin123');
+        }
+      }
+    } catch (err: any) {
+      setErrorMsg(err.message || 'Failed to verify admin password. Try: admin123');
+>>>>>>> 0f699526977362ba5f7d5f20df712ebe5992d6b5
     } finally {
       setLoading(false);
     }
@@ -92,11 +104,22 @@ export const AdminPasswordModal: React.FC<AdminPasswordModalProps> = ({
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+<<<<<<< HEAD
                 placeholder="Enter admin password"
                 className="w-full bg-amber-50/50 border border-amber-200 rounded-2xl px-4 py-3 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-orange-500 font-mono tracking-wider"
               />
             </div>
 </div>
+=======
+                placeholder="Enter password (e.g. admin123)"
+                className="w-full bg-amber-50/50 border border-amber-200 rounded-2xl px-4 py-3 text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-orange-500 font-mono tracking-wider"
+              />
+            </div>
+            <p className="text-[11px] text-amber-800 font-medium mt-1">
+              🔑 System Admin Password: <code className="bg-amber-100 px-1.5 py-0.5 rounded text-amber-900 font-mono">admin123</code>
+            </p>
+          </div>
+>>>>>>> 0f699526977362ba5f7d5f20df712ebe5992d6b5
 
           {errorMsg && (
             <div className="bg-rose-50 border border-rose-200 text-rose-700 text-xs p-3 rounded-xl font-medium">

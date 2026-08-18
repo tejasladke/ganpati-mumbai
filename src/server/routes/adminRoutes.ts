@@ -12,8 +12,13 @@ router.post('/verify-password', authMiddleware, (req: any, res) => {
     return res.status(400).json({ message: 'Admin password is required' });
   }
 
+<<<<<<< HEAD
   // Admin password check
   if (password === 'tejas@ladke') {
+=======
+  // Admin password check ('admin123')
+  if (password === 'admin123') {
+>>>>>>> 0f699526977362ba5f7d5f20df712ebe5992d6b5
     if (req.user) {
       req.user.role = 'admin';
     }

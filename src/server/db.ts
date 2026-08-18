@@ -2,8 +2,14 @@ import bcrypt from 'bcryptjs';
 import mongoose from 'mongoose';
 import { Challenge, Favorite, Pandal, PlannerItem, Submission, User, VisitPlan, Connection, ChatConversation, ChatMessage, CommunityNotification, SharedVisitPlan, UserReport } from '../types.js';
 
+<<<<<<< HEAD
 // Pre-hashed password for the built-in admin account
 const DEFAULT_ADMIN_PASS_HASH = bcrypt.hashSync('tejas@ladke', 10);
+=======
+// Pre-hashed passwords for demo users:
+// admin@mumbai.org / admin123
+const DEFAULT_ADMIN_PASS_HASH = bcrypt.hashSync('admin123', 10);
+>>>>>>> 0f699526977362ba5f7d5f20df712ebe5992d6b5
 
 // Only default admin user retained; dummy users deleted as requested. Active users are added upon registration/login.
 const initialUsers: User[] = [

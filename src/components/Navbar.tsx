@@ -128,7 +128,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onNavigate, onOpenAdm
                   ? 'bg-stone-900 text-amber-300 border-stone-900'
                   : 'border-amber-300 text-amber-900 hover:bg-amber-100 bg-amber-50/80'
               }`}
+<<<<<<< HEAD
               title="Requires Admin Password"
+=======
+              title="Requires Admin Password (admin123)"
+>>>>>>> 0f699526977362ba5f7d5f20df712ebe5992d6b5
             >
               <ShieldCheck className="w-4 h-4 text-amber-600" />
               <span>{user?.role === 'admin' ? 'Admin Panel' : 'Admin Login'}</span>
