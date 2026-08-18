@@ -1,0 +1,6 @@
+{
+  "name": "Ganpati Mumbai Explorer",
+  "description": "Explore iconic Mumbai Ganpati Pandals, interactive maps, festival planner, challenges, leaderboard, and admin controls with bright festive themes.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
